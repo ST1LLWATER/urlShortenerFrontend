@@ -59,7 +59,7 @@ function Home() {
             </div>
           </form>
 
-            <div className="w-full mt-52 flex justify-center items-center text-center"><a className="text-3xl md:text-4xl font-medium text-teal-600" target="_blank" href={`${shortURL}`}>{shortURL}</a></div>
+            <div className="w-full mt-52 flex justify-center items-center text-center"><a className="text-3xl md:text-4xl font-medium text-teal-600" rel="noreferrer" target="_blank" href={`${shortURL}`}>{shortURL}</a></div>
         </div>
         </>
     );
