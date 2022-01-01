@@ -1,9 +1,11 @@
+require ("dotenv").config();
+
 module.exports = {
   async rewrites() {
     return [
       {
         source: '/api/:path*',
-        destination: 'https://urlshortener-production-2338.up.railway.app/:path*' // Proxy to Backend
+        destination: `${process.env.API}:path*` // Proxy to Backend
       }
     ]
   }
